@@ -59,7 +59,13 @@ img {
 }
 
 // CLASSES
+.container {
+  width: var(--container-width);
+  margin-inline: auto;
+}
+
 .btn {
+  display: inline-block;
   padding: 0.875rem 2rem;
   line-height: 1;
   font-weight: 700;
@@ -83,4 +89,34 @@ img {
   &:hover {
     opacity: 0.5;
   }
+}
+
+// SPECIFIC
+.header {
+  padding-top: 1rem;
+
+  img {
+    width: 90px;
+  }
+}
+
+.hero {
+  margin-top: 2.375rem;
+  position: relative;
+
+  &__title {
+    font-size: 2.5rem;
+    line-height: 1.125;
+  }
+
+  img {
+    width: 100%;
+    margin-inline: -1rem;
+  }
+
+}
+
+.footer {
+  background-color: var(--clr-dark);
+  padding-block: 2rem;
 }
