@@ -147,16 +147,16 @@ img {
 }
 
 .hero {
-  margin-top: 2.375rem;
+  padding-top: 2.375rem;
   position: relative;
 
   @include tablet {
-    margin-top: 6.25rem;
+    padding-top: 6.25rem;
     margin-bottom: 13.125rem;
   }
 
   @include desktop {
-    margin-top: 10.75rem;
+    padding-top: 10.75rem;
     margin-bottom: 15.625rem;
   }
 
@@ -208,7 +208,6 @@ img {
     @include tablet {
       width: revert;
       position: absolute;
-      z-index: -1;
       top: -260px;
       right: -340px;
     }
@@ -226,7 +225,7 @@ img {
 
   display: grid;
   grid-template-columns: repeat(var(--column-count), 1fr);
-  margin-bottom: 5rem;
+  padding-bottom: 5rem;
   row-gap: 2.5rem;
 
   @include tablet {
@@ -239,7 +238,7 @@ img {
     --column-count: 3;
     column-gap: 1.875rem;
     row-gap: 5rem;
-    margin-bottom: 8.75rem;
+    padding-bottom: 8.75rem;
   }
 
   > * {
